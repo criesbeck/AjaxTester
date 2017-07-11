@@ -90,7 +90,7 @@ function postWithAjax(myajax) {
 		} else {
 			$("#statuspre").addClass("alert-warning");
 		}
-		$("#outputpre").text(jqXHR.responseText);
+		$("#outputpre").val(jqXHR.responseText);
 		$("#headerpre").text(jqXHR.getAllResponseHeaders());
 	}
 
