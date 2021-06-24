@@ -132,6 +132,13 @@ $("#submitajax").click(function(e) {
   }
 });
 
+$("#copybtn").click(function(e) {
+	e.preventDefault();
+	const text = $("#outputpre").val();
+	navigator.clipboard.writeText(text)
+	.then(() => alert(`copied ${text.length} characters`), (err) => alert(`failed: ${err}`))
+})
+
 function checkForFiles() {
 	return $("#paramform").find(".input-file").length > 0;
 }

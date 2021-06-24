@@ -11,13 +11,23 @@ body {
 }
 
 #urlvalue {
-	width: 400px;
+	width: 100%;
 }
 
 #outputpre {
   min-height: 350px;
   font-size: 85%;
   width: 100%;
+}
+
+#statuspre {
+  display: inline-block;
+  width: 50%;
+}
+
+#copybtn {
+  float: right;
+  width: 20%;
 }
 
 #headerpre {

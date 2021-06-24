@@ -114,7 +114,7 @@
 
 
 						<div class="row show-grid">
-							<div class="span1">
+							<div class="span2">
 								<div class="control-group">
 									<label class="control-label" for="httpmethod">Method</label>
 									<div class="controls">
@@ -130,12 +130,12 @@
 								</div>
 							</div>
 
-							<div class="span4">
+							<div class="span3">
 								<div class="control-group">
 									<label class="control-label" for="urlvalue">Endpoint</label>
 									<div class="controls">
 										<input type="text" class="input-xlarge" id="urlvalue"
-											value="https://httpbin.org/get">
+											value="https://jsonplaceholder.typicode.com/posts/1">
 									</div>
 								</div>
 							</div>
@@ -235,7 +235,6 @@
 					<a class="close" data-dismiss="alert">&times;</a> <strong>Welcome!</strong>
           Use this simple page to experiment with AJAX calls.
           Specify HTTP method, URL and parameters, and click on <b>Ajax Request</b>.
-          Note that this page requires a browser with HTML5 support.
 				</div>
 
 			</div>
@@ -243,6 +242,7 @@
 			<div class="span6">
 				<div id="ajaxoutput">
 					<pre id="statuspre">0</pre>
+					<button id="copybtn" class="btn btn-primary" style="margin-bottom: 1.5em;">Copy</button>
 					<textarea id="outputpre"></textarea>
 					<pre class="pre-scrollable prettyprint linenums" id="headerpre"></pre>
 				</div>
@@ -254,7 +254,7 @@
 
 	</div>
 
-	<script src="jquery-1.10.2.min.js"></script>
+	<script src="jquery-3.6.0.min.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 	<script src="debug.js"></script>
   
